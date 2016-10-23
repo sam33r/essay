@@ -1,10 +1,10 @@
 {{ partial "header.html" . }}
 
 	<!-- Hack to render the index page's content on the homepage. -->
-	{{ range .Data.Pages }}
+  {{ range .Data.Pages }}
     {{if eq .Type "index" }} 
       {{.Content}}
     {{end}}
-	{{ end }}
+  {{ end }}
 
 {{ partial "footer.html" . }}
